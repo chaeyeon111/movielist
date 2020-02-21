@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import Movies from './components/movies';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  //rendering은 data를 html로 변환서 renderer에게 전달는 일관 작업
+  render() {
+    return (
+      <main className="container">
+        <Movies></Movies>
+      </main>
+        );
+  }
 }
-
 export default App;
